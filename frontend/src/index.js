@@ -9,9 +9,12 @@ import GalleryPage from "./pages/GalleryPage";
 import CreateObjectPage from "./pages/CreateObjectPage";
 import DetailPage from "./pages/DetailPage";
 
+import NavBar from "./components/NavBar";
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <NavBar/>
       <Switch>
         <Route exact path="/" render={(props) => <LandingPage {...props} />} />
         <Route
