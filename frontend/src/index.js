@@ -1,15 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import '@hack4impact-uiuc/bridge/dist/styles.css'
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import "semantic-ui-css/semantic.min.css";
+import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import GalleryPage from "./pages/GalleryPage";
+import CreateObjectPage from "./pages/CreateObjectPage";
+import DetailPage from "./pages/DetailPage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Switch>
+        <Route exact path="/" render={(props) => <LandingPage {...props} />} />
+        <Route
+          exact
+          path="/gallery"
+          render={(props) => <GalleryPage {...props} />}
+        />
+        <Route
+          exact
+          path="/create"
+          render={(props) => <CreateObjectPage {...props} />}
+        />
+        <Route
+          exact
+          path="/detail"
+          render={(props) => <DetailPage {...props} />}
+        />
+      </Switch>
+    </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
