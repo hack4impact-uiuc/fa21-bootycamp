@@ -13,9 +13,9 @@ export default function GalleryPage() {
       hard-code these objects in the ../data/mockData.js file. */}
 
       <Card
-        image='https://raw.githubusercontent.com/hack4impact-uiuc/Academy-Git-Demo/master/adorable.JPG?token=ADT32ZKMXF4TLRDLNN3JA627PDQSU'
-        header='Otter'
-        description='otter otter alma otter'
+        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
+        header='Michael Scott'
+        description='this is michael'
       />
 
     </div>
