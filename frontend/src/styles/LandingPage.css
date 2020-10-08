@@ -1,0 +1,34 @@
+.titles {
+    text-align: center;
+    margin-right: auto;
+    margin-left:auto;
+}
+.container {
+    position: relative;
+    height: 50%;
+
+  }
+  
+  /* Make the image responsive */
+  .container img {
+      width: 100%;
+
+  }
+  .container .massive.ui.button {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transform: translate(-40%, -30%);
+    -ms-transform: translate(-40%, -30%);
+    
+  }
+   .container .buttonclass .massive.ui.button {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+    transform: translate(-60%, -30%);
+    -ms-transform: translate(-60%, -30%);
+    
+  }
+  
+  
