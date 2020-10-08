@@ -12,7 +12,7 @@ cd backend/
 yarn
 ```
 
-To run either the frontend or backend locally, run this command:
+To run either the frontend or backend locally, run this command (make sure you're in the `frontend/` or `backend/` folder:
 ```
 yarn start
 ```
