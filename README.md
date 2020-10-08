@@ -27,6 +27,8 @@ In this assignment, you will create a web application to interface with a collec
 
 We also suggest that you use [Semantic UI React](https://react.semantic-ui.com/elements/button/). We have already imported this in the code so it is more convenient for you to use, but you are also free to use any other UI library.
 
+**Please make sure that you're only pushing and pulling from your branch (with the exception of getting updates from Alice & Brandon - we'll let you know when this is the case.) Double check this by running `git status` in your terminal.**
+
 ##### Frontend
 
 For the frontend, you will create at least four separate pages.
