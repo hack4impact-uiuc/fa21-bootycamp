@@ -32,6 +32,7 @@ ReactDOM.render(
           path="/detail"
           render={(props) => <DetailPage {...props} />}
         />
+        
       </Switch>
     </Router>
   </React.StrictMode>,

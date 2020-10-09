@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+
 import "../styles/LandingPage.css";
 
 export default function LandingPage() {
@@ -11,9 +12,9 @@ export default function LandingPage() {
       leading to GalleryPage and another button leading to CreateObjectPage. */}
       <div class="container">
       <img src="https://retaildesignblog.net/wp-content/uploads/2014/04/Peppes-Pizza-restaurant-by-RISS-INTERIORARKITEKTER-Oslo-Norway.jpg" ></img>
-      <button class = "massive ui button">Go to Gallery</button>
+      <button class = "massive ui button"><Link to="/gallery">Go to Gallery</Link></button>
       <div class = 'buttonclass'>
-      <button class = "massive ui button" >Create User</button>
+      <button class = "massive ui button" ><Link to="/create">Create user</Link></button>
       </div>
      
        </div>
