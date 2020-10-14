@@ -8,6 +8,11 @@ import jumbotron2 from './stripes.jpg';
 export default function LandingPage() {
   const [index,setIndex] = useState(0);
   const [words, setWords] = useState(["Food","Rides","Entertainment"]);
+  const [column, setColumn] = useState(["./cups.png", "./mill.png", "./bounce.png"]);
+  const [column2, setColumn2] = useState(["./popcorn.png", "./wheel.png", "./circ.png"]);
+  const [column3, setColumn3] = useState(["./ice.png", "./coaster.png", "./game.png"]);
+  const [id, setID] = useState(["img1","img2","img3"]);
+
   const myStyle = {
     backgroundImage: `url(${jumbotron})`,
     backgroundSize: 'cover',
@@ -41,11 +46,11 @@ export default function LandingPage() {
   const textStyle = {
     textAlign: "center",
     fontFamily:'Bangers',
-    fontSize:"40px",
+    fontSize:"50px",
     color:"white",
-    textShadow: "4px 4px black",
-    backgroundColor:"#E35980",
-    fontWeight:"5"
+    textShadow: "2px 3px black",
+   // backgroundColor:"#C70039",
+    fontWeight:"16"
   }
 
  
@@ -53,6 +58,7 @@ export default function LandingPage() {
     <div>
       {/* This is the homepage of your app. You should have a jumbotron, a button 
       leading to GalleryPage and another button leading to CreateObjectPage. */}
+      {/* <img src={require("./cotton.jpeg")}/>*/}
       <div style = {myStyle}>
       <br></br>
       <br></br>
@@ -63,7 +69,6 @@ export default function LandingPage() {
       </div>
       <div style = {myStyle2}>
       </div>
-      <br></br>
       <div style={{display:"flex", justifyContent: "center", position: "relative"}}>
       <h1 style={textStyle}>&nbsp;&nbsp;{words[index]}&nbsp;&nbsp;</h1>
       <Button onClick = {() => {
@@ -72,9 +77,18 @@ export default function LandingPage() {
         } else {
           setIndex(index + 1);
         }
-        }} id="button3" style={{color:"white", position:"absolute", right:"0", backgroundColor:"#C70039", fontFamily:"Bangers", textShadow: "2px 2px black", padding:"10px 60px", fontSize:"20px", boxShadow: "2px 2px black", fontWeight:"5"}}>Explore </Button>
+        }} id="button3" style={{color:"white", position:"absolute", right:"0", backgroundColor:"#E35980", fontFamily:"Bangers", textShadow: "2px 2px black", padding:"10px 60px", fontSize:"20px", boxShadow: "2px 2px black", fontWeight:"5"}}>Explore </Button>
       </div>
-      <img src='./stripes.jpg'/>
+      <div style={{display:"flex", justifyContent: "center", position: "relative"}}>
+      <img id={id[index]} style={{width:"200px", height:"200px", marginRight:"40px", border:"2px #C70039 outset", borderRadius:"50px"}} src={column[index]}/>
+      <img id={id[index]} style={{width:"200px", height:"200px", marginRight:"40px", border:"2px #C70039 outset", borderRadius:"50px"}} src={column2[index]}/>
+      <img id={id[index]} style={{width:"200px", height:"200px", border:"2px #C70039 outset", borderRadius:"50px"}} src={column3[index]}/>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+
+
     </div>
   );
 }

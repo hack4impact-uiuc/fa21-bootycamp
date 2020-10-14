@@ -17,6 +17,21 @@ export default function GalleryPage() {
         header='Michael Scott'
         description='this is michael'
       />
+      <Card
+        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
+        header='Michael Scott'
+        description='this is michael'
+      />
+      <Card
+        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
+        header='Michael Scott'
+        description='this is michael'
+      />
+      <Card
+        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
+        header='Michael Scott'
+        description='this is michael'
+      />
 
     </div>
   );
