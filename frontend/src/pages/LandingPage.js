@@ -70,7 +70,7 @@ export default function LandingPage() {
       <div style = {myStyle2}>
       </div>
       <div style={{display:"flex", justifyContent: "center", position: "relative"}}>
-      <h1 style={textStyle}>&nbsp;&nbsp;{words[index]}&nbsp;&nbsp;</h1>
+      <h1 style={textStyle}>We have <span style={{color:"#C70039"}}>{words[index]}</span></h1>
       <Button onClick = {() => {
         if (index > 1) {
           setIndex(0);
@@ -79,7 +79,7 @@ export default function LandingPage() {
         }
         }} id="button3" style={{color:"white", position:"absolute", right:"0", backgroundColor:"#E35980", fontFamily:"Bangers", textShadow: "2px 2px black", padding:"10px 60px", fontSize:"20px", boxShadow: "2px 2px black", fontWeight:"5"}}>Explore </Button>
       </div>
-      <div style={{display:"flex", justifyContent: "center", position: "relative"}}>
+      <div style={{display:"flex", justifyContent: "center", position: "relative", marginTop:"-30px"}}>
       <img id={id[index]} style={{width:"200px", height:"200px", marginRight:"40px", border:"2px #C70039 outset", borderRadius:"50px"}} src={column[index]}/>
       <img id={id[index]} style={{width:"200px", height:"200px", marginRight:"40px", border:"2px #C70039 outset", borderRadius:"50px"}} src={column2[index]}/>
       <img id={id[index]} style={{width:"200px", height:"200px", border:"2px #C70039 outset", borderRadius:"50px"}} src={column3[index]}/>
