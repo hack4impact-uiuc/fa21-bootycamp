@@ -7,7 +7,7 @@ import "../styles/DetailPage.css";
 export default function DetailPage() {
   return (
     <div>
-      <h1>Detail</h1>
+      <h1>Details</h1>
       {/* This is where you'll display the properties of your object (i.e. price, date, 
         name, etc.) */}
     </div>
