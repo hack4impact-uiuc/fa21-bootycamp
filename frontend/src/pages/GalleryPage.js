@@ -12,8 +12,10 @@ export default function GalleryPage() {
     fontSize:"50px",
     color:"white",
     textShadow: "2px 3px black",
-   // backgroundColor:"#C70039",
-    fontWeight:"16"
+   backgroundColor:"#C70039",
+    fontWeight:"16",
+    width:"50%",
+    marginLeft:"25%"
   }
   return (
     <div>
@@ -22,39 +24,37 @@ export default function GalleryPage() {
       hard-code these objects in the ../data/mockData.js file. */}
       <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers'}}>
       <Card
-        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-        header='Michael Scott'
-        description='this is michael'
-        style={{width:"300px", height:"300px",marginTop:"15px"}}
+        image='ride1.png'
+        header='Ferris Wheel'
+        description='$5.00'
+        style={{marginTop:"15px", fontFamily:"Bangers"}}
       /><Card
-        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-        header='Michael Scott'
-        description='this is michael'
-        style={{width:"300px", height:"300px"}}
+        image='ride2.png'
+        header='Spinny Scott'
+        description='$4.00'
       /><Card
-      image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-      header='Michael Scott'
-      description='this is michael'
-      style={{width:"300px", height:"300px"}}
+      image='ride3.png'
+      header='Sum Swings'
+      description='$6.00'
     />
+    <br></br>
     </div>
     <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers'}}>
       <Card
-        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-        header='Michael Scott'
-        description='this is michael'
-        style={{width:"300px", height:"300px",marginTop:"15px"}}
+        image='ride4.png'
+        header='Bike Town'
+        description='$2.00'
+        style={{marginTop:"15px"}}
       /><Card
-        image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-        header='Michael Scott'
-        description='this is michael'
-        style={{width:"300px", height:"300px"}}
+        image='ride5.png'
+        header='Bhad Bhumpers'
+        description='$8.00'
       /><Card
-      image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-      header='Michael Scott'
-      description='this is michael'
-      style={{width:"300px", height:"300px"}}
+      image='ride6.png'
+      header='Swan Lake'
+      description='$1.00'
     />
+    <br></br>
     </div>
     </div>
   );
