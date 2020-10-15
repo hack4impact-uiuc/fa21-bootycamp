@@ -8,20 +8,39 @@ export default function LandingPage() {
   return (
    
     <div>
-       <h1 class = 'titles'>Welcome to my Cat Cafe!</h1>
+       <h1 class = 'titles'>C A T F E</h1>
       {/* This is the homepage of your app. You should have a jumbotron, a button 
       leading to GalleryPage and another button leading to CreateObjectPage. */}
       <div class = 'container'>
-  <img class = "ui fluid image" src="https://retaildesignblog.net/wp-content/uploads/2014/04/Peppes-Pizza-restaurant-by-RISS-INTERIORARKITEKTER-Oslo-Norway.jpg"></img>
+ 
+  <div class="row">
+  <div class="column">
+  <img src = "https://cdn2.scratch.mit.edu/get_image/gallery/4174107_200x130.png"></img>
+  <img src="https://media4.giphy.com/media/aQ0PfLFwagW52/giphy.gif"></img>
+  </div>
+  <div class="column">
+    <img src="https://i.pinimg.com/originals/c9/e0/70/c9e070c32cce9c388475dfb50fc39ec6.gif"></img>
+    <img src="https://i.pinimg.com/originals/cb/82/05/cb8205c6998eb9377d70820a49e24f69.gif"></img>
+  </div>
+  
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/IxG2r9QByb15Bjk6sk0QUByLkgC6pcgYgaLXQhI-YV1IfpP88Mo3xUcDB5BcE-nbnDVIjIY7H53dqHmBnO3PwpI5YLuuVQmY3q2tzX5561030yWEoP-xEQ5myvadzQv8JS-mdS6LtP-p8LSqc0lYP3_Op2xLrgWr"></img>
+    <img src="https://i.gifer.com/SKbV.gif"></img>
+  </div>
+  <div class="column">
+    <img src="https://i.gifer.com/FPdQ.gif"></img>
+    <img src="https://pa1.narvii.com/6951/20bb4fbc8492573e12d3996a0589567e99527e3ar1-320-320_00.gif"></img>
+  </div>
+</div>
+<h2 class = 'descr'>EXCLUSIVE INVITE-ONLY CAT CAFE</h2>
+  
   
   
       
       <button class = "massive ui button"><Link to="/gallery">Go to Gallery</Link></button>
       <div class = 'buttonclass'>
       <button class = "massive ui button" ><Link to="/create">Create user</Link></button>
-      <div class = 'info'>
-      <div class="ui medium header">Get served by Pusheen herself and our cat staff! Go to gallery to view our menu. </div>
-      </div>
+     
       </div>
       </div>
      
