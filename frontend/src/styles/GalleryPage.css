@@ -1,2 +1,14 @@
+.title h1{
+    font-size: 50pt;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+body {
+    background-color: white;
+}
 
-
+.ui.card>.content {
+    color: white;
+}

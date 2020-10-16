@@ -7,16 +7,15 @@
     height: 100%;
     width: 100%;
 }
-
+/*
 .header {
     position: absolute;
     bottom: 220px;
     left: 50px;
     width: 680px;
     height: 300px;
-    /*border-style: solid;*/
     padding: 10px;
-}
+}*/
 
 .header h1 {
     color: white;
