@@ -8,8 +8,7 @@ export default function DetailPage() {
   return (
     <div>
       <h1>Detail</h1>
-      {/* This is where you'll display the properties of your object (i.e. price, date, 
-        name, etc.) */}
+      {<p>sample</p>}
     </div>
   );
 }

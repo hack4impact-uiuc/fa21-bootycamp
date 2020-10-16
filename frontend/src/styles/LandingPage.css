@@ -5,7 +5,9 @@
     height: 100vh;
 }
 
+
 .zoom {
+    font-family: 'Courier New', Courier, monospace;
     position: absolute;
     top: 30%;
     left: 50%;
@@ -24,6 +26,7 @@
 
 .description {
     position: relative;
+    font-family: 'Courier New', Courier, monospace;
     top: 60%;
     left: 10%;
     font-size: 17px;
