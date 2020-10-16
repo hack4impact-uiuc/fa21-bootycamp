@@ -11,6 +11,8 @@ export default function DetailPage() {
       <h1>Detail</h1>
       {/* This is where you'll display the properties of your object (i.e. price, date, 
         name, etc.) */}
+        <h2>Name: Cake </h2>
+        <h2>Cost: $5.00 </h2>
        
 
     </div>
