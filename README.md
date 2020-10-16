@@ -63,9 +63,9 @@ TBD
 
 10/10/2020: Finish the home page.
 
-10/15/2020: Finish item detail page and create item page.
+10/15/2020: Finish the gallery page and detail page.
 
-10/17/2020: Finish the gallery page.
+10/17/2020: Finish the create item page.
 
 ##### Backend
 
