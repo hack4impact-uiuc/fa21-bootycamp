@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family: "Impact", fantasy;
+    font-size: 80px;
+  }
+  
+  .container .btn {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Palatino", serif;
+    
+  }
+  
+  .container .btn:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .container .btn1 {
+    position: absolute;
+    top: 60%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 14px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Palatino", serif;
+  }
+  
+  .container .btn1:hover {
+    background-color: white;
+    color: white;
+  }

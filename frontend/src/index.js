@@ -8,6 +8,9 @@ import LandingPage from "./pages/LandingPage";
 import GalleryPage from "./pages/GalleryPage";
 import CreateObjectPage from "./pages/CreateObjectPage";
 import DetailPage from "./pages/DetailPage";
+import CafePage from "./pages/CafePage";
+import ImagePage from "./pages/ImagePage";
+
 
 import NavBar from "./components/NavBar";
 
@@ -31,6 +34,16 @@ ReactDOM.render(
           exact
           path="/detail"
           render={(props) => <DetailPage {...props} />}
+        />
+        <Route
+          exact
+          path="/cafe"
+          render={(props) => <CafePage {...props} />}
+        />
+        <Route
+          exact
+          path="/image"
+          render={(props) => <ImagePage {...props} />}
         />
       </Switch>
     </Router>
