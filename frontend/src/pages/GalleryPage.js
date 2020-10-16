@@ -20,11 +20,11 @@ import trap_hole from './images/trap_hole.jpg';
 export default function GalleryPage() {
   return (
     <div>
-      <div id="title">
-        <h1>My Card Collection</h1>
-        {/* This is the page that displays all the items in your database. For now, 
-        hard-code these objects in the ../data/mockData.js file. */}
-      </div>
+     
+      <h1 class="title">My Card Collection</h1>
+      {/* This is the page that displays all the items in your database. For now, 
+      hard-code these objects in the ../data/mockData.js file. */}
+     
     
     <div id="cards">
       <Card.Group itemsPerRow={4}>
@@ -70,6 +70,7 @@ export default function GalleryPage() {
           />
 
           <Card
+            className = "trap"
             as={Link} to ='/detail'
             image={mirror_force}
             header='Mirror Force'
@@ -77,6 +78,7 @@ export default function GalleryPage() {
             fluid color='purple'
           />
           <Card
+            className = "trap"
             as={Link} to ='/detail'
             image={negate_attack}
             header='Negate Attack'
@@ -84,6 +86,7 @@ export default function GalleryPage() {
             fluid color='purple'
           />
           <Card
+            className = "trap"
             as={Link} to ='/detail'
             image={reverse_trap}
             header='Reverse Trap'
@@ -91,6 +94,7 @@ export default function GalleryPage() {
             fluid color='purple'
           />
           <Card
+            className = "trap"
             as={Link} to ='/detail'
             image={trap_hole}
             header='Trap Hole'
@@ -99,6 +103,7 @@ export default function GalleryPage() {
           />
 
           <Card
+            className = "spell"
             as={Link} to ='/detail'
             image={card_trader}
             header='Card Trader'
@@ -106,6 +111,7 @@ export default function GalleryPage() {
             fluid color='green'
           />
           <Card
+            className = "spell"
             as={Link} to ='/detail'
             image={dark_hole}
             header='Dark Hole'
@@ -113,6 +119,7 @@ export default function GalleryPage() {
             fluid color='green'
           />
           <Card
+            className = "spell"
             as={Link} to ='/detail'
             image={storm}
             header='Storm'
@@ -120,6 +127,7 @@ export default function GalleryPage() {
             fluid color='green'
           />
           <Card
+            className = "spell"
             as={Link} to ='/detail'
             image={swords_of_revealing_lights}
             header='Swords of Revealing Light'

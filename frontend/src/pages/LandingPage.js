@@ -12,7 +12,7 @@ export default function LandingPage() {
       leading to GalleryPage and another button leading to CreateObjectPage. */}
       
       <img src ={background}/>
-      <div class="header">
+      <div class="welcomeMsg">
         <h1>Welcome to my Yu-Gi-Oh Collection!</h1>
         <p>It's time to d-d-d-duel! Here I'll showcase a variety of cards - from more popular ones like the "Dark Magician" to some of my personal favorites like "Exodia the Forbidden One." 
           Feel free to use the menu bar at the top or the buttons below to view my entire card collection or add your own!</p>

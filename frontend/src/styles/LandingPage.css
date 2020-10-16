@@ -7,23 +7,24 @@
     height: 100%;
     width: 100%;
 }
-/*
-.header {
+
+
+.welcomeMsg {
     position: absolute;
     bottom: 220px;
     left: 50px;
     width: 680px;
     height: 300px;
     padding: 10px;
-}*/
+}
 
-.header h1 {
+.welcomeMsg h1 {
     color: white;
     font-family: Impact, Charcoal, sans-serif;
     font-size: 50pt;
 }
 
-.header p {
+.welcomeMsg p {
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 12pt;
