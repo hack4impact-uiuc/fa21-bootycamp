@@ -8,12 +8,20 @@ import "../styles/DetailPage.css";
 export default function DetailPage() {
   return (
     <div>
-      <h1>Detail</h1>
+      <h1></h1>
       {/* This is where you'll display the properties of your object (i.e. price, date, 
         name, etc.) */}
-        <h2>Name: Cake </h2>
-        <h2>Cost: $5.00 </h2>
-       
+        <h2 class = 'center'>About Fluffin Bieber</h2>
+        <h3 class = 'center'> Paw-p star</h3>
+        <img class = 'centerimg' src = "https://vignette.wikia.nocookie.net/pusheenthecat/images/6/69/FB.gif/revision/latest?cb=20130704140002" ></img>
+        <div class = 'pinkcontainer'>
+
+          <h4 class = 'center2'> Age: 4 Cat years</h4>
+          <h4 class = 'center2'> Talents: Singing, making remixes, meowing, hair</h4>
+          <h4 class = 'center2'> Join Fluffin on a romantic date for only $10,000 *not including tax</h4>
+
+
+        </div>
 
     </div>
   );

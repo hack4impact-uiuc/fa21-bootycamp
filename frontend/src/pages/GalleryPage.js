@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../data/mockData";
-import { Card } from 'semantic-ui-react'
+import { Card, Image} from 'semantic-ui-react'
 
 import "../styles/GalleryPage.css";
 
@@ -12,71 +12,46 @@ export default function GalleryPage() {
       {/* This is the page that displays all the items in your database. For now, 
       hard-code these objects in the ../data/mockData.js file. */}
      <Card.Group itemsPerRow={7}>
-     
-      <Card
-        href="./details"
-        image='https://ci.memecdn.com/1064012.gif'
-        header='Catniss Everdeen'
-        description='Sous Chef'
-      />
-      <Card
-        href ='./details'
-        image='https://pa1.narvii.com/6352/21b329b9a356054571a52cc64d3dadbf296e62b1_hq.gif'
-        header='Despawcito Date with Catbrity'
+
+
+
+     <Card
+        href = '/detail'
+        image='https://vignette.wikia.nocookie.net/pusheenthecat/images/6/69/FB.gif/revision/latest?cb=20130704140002'
+        header='Despawcito Date with Celekitty'
         description='$10,000'
       />
+
+
+  
       <Card
-        href = './details'
-        image='https://parisianavores.paris/wp-content/uploads/2013/01/20110824-pusheen-burger.gif'
-        header='Cathy'
-        description='Staff'
-      />
-      <Card
-        href = './details'
-        image='https://thumbs.gfycat.com/ImportantSillyKatydid-small.gif'
-        header='Pusheen'
-        description='CatEO'
-      />
-       <Card
-        href = './details'
-        image='https://media0.giphy.com/media/lXwEriEvWswj6/giphy.gif'
-        header='Kitty Perry'
-        description='Receptionist'
-      />
-      <Card
-        href = './details'
+        href = '/detail'
         image='https://www.countrysidecravings.com/wp-content/uploads/2017/03/three-cheese-pizza-picture.jpg'
-        header='Cheese Pizza touched by Pusheen'
+        header='Cheese Pizza By Pusheen'
         description='$999.99'
       />
       <Card
-        href = './details'
+        href = '/detail'
         image='https://40aprons.com/wp-content/uploads/2020/03/air-fryer-french-fries-4.jpg'
-        header='Fries'
+        header='Fries By Pusheen'
         description='$299.99'
       />
       <Card
-        href = './details'
-        image='https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/The-Best-Ever-Grilled-Cheese-Sandwich_EXPS_THSO18_222725_D03_06_4b.jpg'
-        header='Grilled Cheese'
+        href = '/detail'
+        image='https://www.jessicagavin.com/wp-content/uploads/2020/04/grilled-cheese-7-1200.jpg'
+        header='Grilled Cheese By Pusheen'
         description='$499.99'
-      />
-      <Card
-        href = './details'
-        image='https://www.tasteofhome.com/wp-content/uploads/2018/01/Veggie-Tacos_EXPS_SDFM17_32191_C10_06_5b-1.jpg'
-        header='Tacos'
-        description='$699.99'
       />
        <Card
-        href = './details'
-        image='https://kirbiecravings.com/wp-content/uploads/2019/03/keto-garlic-breadsticks-7a.jpg'
-        header='Breadsticks'
+        href = '/detail'
+        image='https://valentinascorner.com/wp-content/uploads/2020/03/Breadsticks-1.jpg'
+        header='Breadsticks By Pusheen'
         description='$499.99'
       />
       <Card
-        href = './details'
-        image='https://www.fifteenspatulas.com/wp-content/uploads/2012/11/Tiramisu-Fifteen-Spatulas-1.jpg'
-        header='Tiramisu'
+        href = '/detail'
+        image='https://therecipecritic.com/wp-content/uploads/2020/03/tiramisu-9.jpg'
+        header='Tiramisu By Pusheen'
         description='$499.99'
       />
       

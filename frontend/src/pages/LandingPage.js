@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Header, Image } from 'semantic-ui-react'
-
+import { Header, Image } from 'semantic-ui-react';
+import { callApi } from '../utils/api';
 import "../styles/LandingPage.css";
 
 export default function LandingPage() {
+ /* const [text, setText] = useState("");
+  //callApi().then(text=> setText(text)); 
+
+  useEffect(async () => {
+   const text = await callApi();
+   setText(text);
+    
+  }, []); */
   return (
    
     <div>
-       <h1 class = 'titles'>C A T F E</h1>
+       <h1 class = 'titles'>C A T F E </h1>
       {/* This is the homepage of your app. You should have a jumbotron, a button 
       leading to GalleryPage and another button leading to CreateObjectPage. */}
       <div class = 'container'>
@@ -24,8 +32,8 @@ export default function LandingPage() {
   </div>
   
   <div class="column">
-    <img src="https://lh3.googleusercontent.com/proxy/IxG2r9QByb15Bjk6sk0QUByLkgC6pcgYgaLXQhI-YV1IfpP88Mo3xUcDB5BcE-nbnDVIjIY7H53dqHmBnO3PwpI5YLuuVQmY3q2tzX5561030yWEoP-xEQ5myvadzQv8JS-mdS6LtP-p8LSqc0lYP3_Op2xLrgWr"></img>
-    <img src="https://i.gifer.com/SKbV.gif"></img>
+    <img src="https://media0.giphy.com/media/FRQF9ResnCsjS/giphy.gif"></img>
+    <img src="https://parisianavores.paris/wp-content/uploads/2013/01/20110824-pusheen-burger.gif"></img>
   </div>
   <div class="column">
     <img src="https://i.gifer.com/FPdQ.gif"></img>
