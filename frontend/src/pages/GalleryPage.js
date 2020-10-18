@@ -24,35 +24,56 @@ export default function GalleryPage() {
       hard-code these objects in the ../data/mockData.js file. */}
       <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers'}}>
       <Card
+        href='./detail'
         image='ride1.png'
         header='Ferris Wheel'
-        description='$5.00'
-        style={{marginTop:"15px", fontFamily:"Bangers"}}
+        meta='$5.00'
+        description='ride it'
+        style={{marginTop:"15px", fontFamily:"Bangers",border:"5px outset #c70039", marginRight:"20px"}}
       /><Card
+        href='./detail'
         image='ride2.png'
-        header='Spinny Scott'
-        description='$4.00'
+        header='Spinneroo'
+        meta='$4.00'
+        description='ride it'
+        style={{border:"5px outset #c70039", marginRight:"20px"}}
+
       /><Card
+      href='./detail'
       image='ride3.png'
       header='Sum Swings'
-      description='$6.00'
+      meta='$6.00'
+      description='ride it'
+      style={{border:"5px outset #c70039"}}
+
     />
     <br></br>
     </div>
     <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers'}}>
       <Card
+        href='./detail'
         image='ride4.png'
         header='Bike Town'
-        description='$2.00'
-        style={{marginTop:"15px"}}
+        meta='$2.00'
+        description='ride it'
+        style={{marginTop:"15px", border:"5px outset #c70039", marginRight:"20px"}}
+
       /><Card
+        href='./detail'
         image='ride5.png'
         header='Bhad Bhumpers'
-        description='$8.00'
+        meta='$8.00'
+        description='ride it'
+        style={{border:"5px outset #c70039", marginRight:"20px"}}
+
       /><Card
+      href='./detail'
       image='ride6.png'
       header='Swan Lake'
-      description='$1.00'
+      meta='$1.00'
+      description='ride it'
+      style={{border:"5px outset #c70039"}}
+
     />
     <br></br>
     </div>

@@ -4,8 +4,13 @@ import { Button } from 'semantic-ui-react';
 import "../styles/LandingPage.css";
 import jumbotron from './rollercoaster2.png';
 import jumbotron2 from './stripes.jpg';
-
+import { callApi } from '../utils/api'
 export default function LandingPage() {
+  const [text, setText] = useState("");
+  useEffect(async () => {
+    const text = await callApi();
+    setText(text);
+  }, []);
   const [index,setIndex] = useState(0);
   const [words, setWords] = useState(["Food","Rides","Entertainment"]);
   const [column, setColumn] = useState(["./cups.png", "./mill.png", "./bounce.png"]);
@@ -77,7 +82,7 @@ export default function LandingPage() {
         } else {
           setIndex(index + 1);
         }
-        }} id="button3" style={{color:"white", position:"absolute", right:"0", backgroundColor:"#C70039", fontFamily:"Bangers", textShadow: "2px 2px black", padding:"10px 60px", fontSize:"20px", boxShadow: "2px 2px black", fontWeight:"5"}}>Explore </Button>
+        }} id="button3" style={{color:"white", position:"absolute", right:"0", marginRight:"30px", backgroundColor:"#C70039", fontFamily:"Bangers", textShadow: "2px 2px black", padding:"10px 40px", fontSize:"20px", boxShadow: "2px 2px black", fontWeight:"5"}}>Explore </Button>
       </div>
       <div style={{display:"flex", justifyContent: "center", position: "relative", marginTop:"-30px"}}>
       <img id={id[index]} style={{width:"200px", height:"200px", marginRight:"40px", border:"3px #C70039 outset", borderRadius:"50px"}} src={column[index]}/>
