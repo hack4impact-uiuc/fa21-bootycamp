@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Header, Image } from 'semantic-ui-react';
-import { callApi } from '../utils/api';
+import { callApi, makePost } from '../utils/api';
 import "../styles/LandingPage.css";
-
 export default function LandingPage() {
- /* const [text, setText] = useState("");
+ const [text, setText] = useState("");
   //callApi().then(text=> setText(text)); 
 
-  useEffect(async () => {
+  useEffect(() => {
+   const getText = async () => {
    const text = await callApi();
    setText(text);
-    
-  }, []); */
+
+   await makePost();
+   }
+   getText();
+  }, []); 
   return (
    
     <div>
