@@ -1,6 +1,11 @@
 const express = require("express");
+var bodyParser = require("body-parser");
 const app = express();
 const port = 5000;
+app.use(bodyParser.urlencoded({ extended: false }));
+
+// parse application/json
+app.use(bodyParser.json());
 
 //Import the mongoose module
 var mongoose = require("mongoose");
@@ -18,9 +23,31 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 const User = require("./models/User.js");
 
+// gets all objects in db
 app.get("/", async (req, res) => {
-  const response = await User.find();
-  res.send(response);
+  const users = await User.find();
+  res.send(users);
+});
+
+// gets one object in db by _id
+app.get("/:userId", async (req, res) => {
+  const { userId } = req.params;
+  const user = await User.findById(userId);
+  res.send(user);
+});
+
+// creates one new object in db
+app.post("/", async (req, res) => {
+  const newUser = new User(req.body);
+  await newUser.save();
+  res.send(newUser);
+});
+
+// deletes one object in db by _id
+app.delete("/", async (req, res) => {
+  const { userId } = req.params;
+  const deletedUser = await User.findByIdAndRemove(userId);
+  res.send(deletedUser);
 });
 
 app.listen(port, () => {
