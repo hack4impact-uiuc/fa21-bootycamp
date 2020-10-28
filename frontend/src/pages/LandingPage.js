@@ -4,12 +4,16 @@ import { Button } from 'semantic-ui-react';
 import "../styles/LandingPage.css";
 import jumbotron from './rollercoaster2.png';
 import jumbotron2 from './stripes.jpg';
-import { callApi } from '../utils/api'
+import { callApi, makePost } from '../utils/api'
 export default function LandingPage() {
   const [text, setText] = useState("");
-  useEffect(async () => {
-    const text = await callApi();
-    setText(text);
+  useEffect(() => {
+    const demoCall = async () => {
+      const text = await callApi();
+      setText(text);
+      await makePost("special message");
+    };
+    demoCall();
   }, []);
   const [index,setIndex] = useState(0);
   const [words, setWords] = useState(["Food","Rides","Entertainment"]);
