@@ -16,147 +16,171 @@ import storm from './images/storm.jpg';
 import swords_of_revealing_lights from './images/swords_of_revealing_lights.jpg';
 import the_winged_dragon_of_ra from './images/the_winged_dragon_of_ra.jpg';
 import trap_hole from './images/trap_hole.jpg';
+import { getGallery } from '../utils/api';
 
 export default function GalleryPage() {
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    const getData = async () => {
+      const data = await getGallery();
+      setData(data);
+      console.log(data);
+      for (var card of data) {
+        console.log(card.name)
+      }
+    }
+    getData();
+  
+  }, []);
+
+
   return (
     <div>
      
       <h1 class="title">My Card Collection</h1>
       {/* This is the page that displays all the items in your database. For now, 
       hard-code these objects in the ../data/mockData.js file. */}
-     
+
+
+      
     
-    <div id="cards">
-      <Card.Group itemsPerRow={4}>
-          
-          {/*<Card
-            image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
-            header='Michael Scott'
-            description='this is michael'
-          />*/}
+      <div id="cards">
+        <Card.Group itemsPerRow={4}>
+            
+            {/*<Card
+              image='http://cdn.pastemagazine.com/www/articles/assets_c/2019/06/TheOfficeQuote1-thumb-633x351-1115812.png'
+              header='Michael Scott'
+              description='this is michael'
+            />*/}
+            {data.map(card => (
+              <Card
+                className = {card.description}
+                as={Link} to ='/detail'
+                image={card.url}
+                href='Land'
+                header={card.name}
+                description={card.description}
+                fluid color='brown'
+              />
+            ))}
+            {/*<Card
+              className = "monster"
+              as={Link} to ='/detail'
+              image={blueeyeswhitedragon}
+              href='Land'
+              header="blah"
+              description='Monster Card'
+              fluid color='brown'
+            />
+            <Card
+              className = "monster"
+              as={Link} to ='/detail'
+              image={blueeyeswhitedragon}
+              href='Land'
+              header='Blue-Eyes White Dragon'
+              description='Monster Card'
+              fluid color='brown'
+            />
+            <Card
+              className = "monster"
+              as={Link} to ='/detail'
+              image={dark_magician}
+              header='Dark Magician'
+              description='Monster Card'
+              fluid color='brown'
+            />
+            <Card
+              className = "monster"
+              as={Link} to ='/detail'
+              image={exodia_the_forbidden_one}
+              header='Exodia the Forbidden One'
+              description='Monster Card'
+              fluid color='brown'
+            />
+            <Card
+              className = "monster"
+              as={Link} to ='/detail'
+              image={the_winged_dragon_of_ra}
+              header='The Winged Dragon of Ra'
+              description='Monster Card'
+              fluid color='brown'
+            />
 
-          <Card
-            className = "monster"
-            as={Link} to ='/detail'
-            image={blueeyeswhitedragon}
-            href='Land'
-            header='Blue-Eyes White Dragon'
-            description='Monster Card'
-            fluid color='brown'
-          />
-          <Card
-            className = "monster"
-            as={Link} to ='/detail'
-            image={dark_magician}
-            header='Dark Magician'
-            description='Monster Card'
-            fluid color='brown'
-          />
-          <Card
-            className = "monster"
-            as={Link} to ='/detail'
-            image={exodia_the_forbidden_one}
-            header='Exodia the Forbidden One'
-            description='Monster Card'
-            fluid color='brown'
-          />
-          <Card
-            className = "monster"
-            as={Link} to ='/detail'
-            image={the_winged_dragon_of_ra}
-            header='The Winged Dragon of Ra'
-            description='Monster Card'
-            fluid color='brown'
-          />
+            <Card
+              className = "trap"
+              as={Link} to ='/detail'
+              image={mirror_force}
+              header='Mirror Force'
+              description='Trap Card'
+              fluid color='purple'
+            />
+            <Card
+              className = "trap"
+              as={Link} to ='/detail'
+              image={negate_attack}
+              header='Negate Attack'
+              description='Trap Card'
+              fluid color='purple'
+            />
+            <Card
+              className = "trap"
+              as={Link} to ='/detail'
+              image={reverse_trap}
+              header='Reverse Trap'
+              description='Trap Card'
+              fluid color='purple'
+            />
+            <Card
+              className = "trap"
+              as={Link} to ='/detail'
+              image={trap_hole}
+              header='Trap Hole'
+              description='Trap Card'
+              fluid color='purple'
+            />
 
-          <Card
-            className = "trap"
-            as={Link} to ='/detail'
-            image={mirror_force}
-            header='Mirror Force'
-            description='Trap Card'
-            fluid color='purple'
-          />
-          <Card
-            className = "trap"
-            as={Link} to ='/detail'
-            image={negate_attack}
-            header='Negate Attack'
-            description='Trap Card'
-            fluid color='purple'
-          />
-          <Card
-            className = "trap"
-            as={Link} to ='/detail'
-            image={reverse_trap}
-            header='Reverse Trap'
-            description='Trap Card'
-            fluid color='purple'
-          />
-          <Card
-            className = "trap"
-            as={Link} to ='/detail'
-            image={trap_hole}
-            header='Trap Hole'
-            description='Trap Card'
-            fluid color='purple'
-          />
-
-          <Card
-            className = "spell"
-            as={Link} to ='/detail'
-            image={card_trader}
-            header='Card Trader'
-            description='Spell Card'
-            fluid color='green'
-          />
-          <Card
-            className = "spell"
-            as={Link} to ='/detail'
-            image={dark_hole}
-            header='Dark Hole'
-            description='Spell Card'
-            fluid color='green'
-          />
-          <Card
-            className = "spell"
-            as={Link} to ='/detail'
-            image={storm}
-            header='Storm'
-            description='Spell Card'
-            fluid color='green'
-          />
-          <Card
-            className = "spell"
-            as={Link} to ='/detail'
-            image={swords_of_revealing_lights}
-            header='Swords of Revealing Light'
-            description='Spell Card'
-            fluid color='green'
-          />
+            <Card
+              className = "spell"
+              as={Link} to ='/detail'
+              image={card_trader}
+              header='Card Trader'
+              description='Spell Card'
+              fluid color='green'
+            />
+            <Card
+              className = "spell"
+              as={Link} to ='/detail'
+              image={dark_hole}
+              header='Dark Hole'
+              description='Spell Card'
+              fluid color='green'
+            />
+            <Card
+              className = "spell"
+              as={Link} to ='/detail'
+              image={storm}
+              header='Storm'
+              description='Spell Card'
+              fluid color='green'
+            />
+            <Card
+              className = "spell"
+              as={Link} to ='/detail'
+              image={swords_of_revealing_lights}
+              header='Swords of Revealing Light'
+              description='Spell Card'
+              fluid color='green'
+            />*/}
 
 
-        </Card.Group>
-      
-      
-      
+          </Card.Group>
         
-      </div>
-      <Card className='mat'>
-          <Image src='https://react.semantic-ui.com/images/avatar/large/matthew.png' wrapped ui={false} />
-          <Card.Content>
-            <Card.Header>Matthew</Card.Header>
-            <Card.Description>
-              Matthew is a musician living in Nashville.
-            </Card.Description>
-          </Card.Content>
-          <Card.Content extra>
-            <a>
-              <Icon name='user' />
-              22 Friends
-            </a>
-          </Card.Content>
-        </Card>
+        
+        
+          
+        </div>
+      
     </div>
   );
 }

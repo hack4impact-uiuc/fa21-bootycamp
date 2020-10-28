@@ -2,10 +2,26 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from 'semantic-ui-react'
 
+import { callApi, makePost } from '../utils/api';
 import "../styles/LandingPage.css";
 import background from './images/background.png';
  
 export default function LandingPage() {
+  const [text, setText] = useState("")
+  /*
+  useEffect(() => {
+    const getText = async () => {
+      const text = await callApi();
+      setText(text);
+
+      await makePost('this is blah');
+    }
+
+    getText();
+  
+  }, []);
+  callApi().then(text => setText(text));*/
+
   return (
     <div class="landing">
       {/* This is the homepage of your app. You should have a jumbotron, a button 

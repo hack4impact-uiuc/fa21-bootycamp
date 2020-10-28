@@ -1,0 +1,30 @@
+h1 {
+    font-size: 40pt;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    padding-top: 10px;
+}
+
+.container {
+    border: 3px solid blue;
+    background-color: black;
+	padding: 20px 40px 40px;
+	max-width: 640px;
+    display: flex;
+    margin: auto;
+    
+}
+img {
+    margin: 20px 30px 0 0;
+    width: 300px;
+    object-fit: contain;
+    align-self: flex-start;
+    
+}
+
+.values {
+    flex: 1 1 auto;
+    color: white;
+    margin: auto;
+
+}
