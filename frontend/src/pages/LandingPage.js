@@ -12,6 +12,7 @@ export default function LandingPage() {
    const text = await callApi();
    setText(text);
 
+
    await makePost();
    }
    getText();

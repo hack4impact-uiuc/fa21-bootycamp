@@ -2,10 +2,25 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../data/mockData";
 import { Card, Image} from 'semantic-ui-react'
+import { callApi, makePost } from '../utils/api';
 
 import "../styles/GalleryPage.css";
 
+
 export default function GalleryPage() {
+  const [text, setText] = useState();
+  //callApi().then(text=> setText(text)); 
+
+  useEffect(() => {
+   const getText = async () => {
+   const text = await callApi();
+   setText(text["name"]);
+   console.log(text)
+
+   await makePost();
+   }
+   getText();
+  }, []); 
   return (
     <div>
       <h1 class = "titles">Gallery</h1>
@@ -13,12 +28,19 @@ export default function GalleryPage() {
       hard-code these objects in the ../data/mockData.js file. */}
      <Card.Group itemsPerRow={7}>
 
-
+    {/*text.values.map(item => (
+      <Card
+      href = '/detail'
+      image = {item.image}
+      header = {item.name}
+      description = {item.hobbies}
+      />
+    ))*/}
 
      <Card
         href = '/detail'
         image='https://vignette.wikia.nocookie.net/pusheenthecat/images/6/69/FB.gif/revision/latest?cb=20130704140002'
-        header='Despawcito Date with Celekitty'
+        header={text}
         description='$10,000'
       />
 
