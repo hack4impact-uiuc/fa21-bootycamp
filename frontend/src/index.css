@@ -5,7 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+html, body { height: 100%; width: 100%; margin: 0; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -18,7 +20,7 @@ h1 {
   animation-fill-mode: forwards; 
   -webkit-text-stroke: 1px black;
   
-} 
+}
 
 #button3 {
   animation: fadeInAnimation2 ease 1s; 
@@ -57,6 +59,21 @@ h1 {
   animation: fadeInAnimation ease 2.5s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
+}
+
+#gear1, #gear2, #gear3{
+	animation: rotation 15s infinite linear;
+	animation-delay: 1s;
+
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 @keyframes fadeInAnimation { 

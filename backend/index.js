@@ -21,23 +21,15 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 const Ride = require("./models/Rides.js")
 
 app.get('/', async (req, res) => {
-  Ride.create({ 
-    name: "Vasu",
-    rideName: "Twister",
-    ticketPrice: 5.00,
-    minHeight: 60,
-    imageURL: "www.com",
-    publishedAuthor: true 
-  })
   const response = await Ride.find({});
   console.log(response);
   //return response;
-  res.send(response);
+  res.json(response);
 })
-app.post('/create', (req, res) => {
-  console.log('you made it');
-  console.log(req.body);
-  res.status(200);
+app.post('/create', async (req, res) => {
+  const newRide = new Ride(req.body);
+  await newRide.save()
+  res.json(newRide);
 })
 
 app.listen(port, () => {

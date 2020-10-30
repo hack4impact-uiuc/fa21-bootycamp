@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../data/mockData";
 import { Card } from 'semantic-ui-react'
+import { callApi, makePost } from '../utils/api'
 
 import "../styles/GalleryPage.css";
 
@@ -17,64 +18,35 @@ export default function GalleryPage() {
     width:"50%",
     marginLeft:"25%"
   }
+  const [rides, setRide] = useState([]);
+  useEffect(() => {
+    const demoCall = async () => {
+      const rides = await callApi();
+      setRide(rides);
+      //await makePost("special message");
+    };
+    demoCall();
+  }, []);
   return (
     <div>
       <h1 style={textStyle}>Gallery</h1>
+      <br></br>
       {/* This is the page that displays all the items in your database. For now, 
       hard-code these objects in the ../data/mockData.js file. */}
-      <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers'}}>
+      <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers', margin:"auto"}}>
+      <Card.Group itemsPerRow={6}>
+      {rides.map((value) => (
       <Card
-        href='./detail'
-        image='ride1.png'
-        header='Ferris Wheel'
-        meta='$5.00'
-        description='ride it'
-        style={{marginTop:"15px", fontFamily:"Bangers",border:"5px outset #c70039", marginRight:"20px"}}
-      /><Card
-        href='./detail'
-        image='ride2.png'
-        header='Spinneroo'
-        meta='$4.00'
-        description='ride it'
-        style={{border:"5px outset #c70039", marginRight:"20px"}}
-
-      /><Card
-      href='./detail'
-      image='ride3.png'
-      header='Sum Swings'
-      meta='$6.00'
-      description='ride it'
-      style={{border:"5px outset #c70039"}}
-
-    />
-    <br></br>
-    </div>
-    <div style={{display:"flex", justifyContent: "center", position: "relative", fontFamily:'Bangers'}}>
-      <Card
-        href='./detail'
-        image='ride4.png'
-        header='Bike Town'
-        meta='$2.00'
-        description='ride it'
-        style={{marginTop:"15px", border:"5px outset #c70039", marginRight:"20px"}}
-
-      /><Card
-        href='./detail'
-        image='ride5.png'
-        header='Bhad Bhumpers'
-        meta='$8.00'
-        description='ride it'
-        style={{border:"5px outset #c70039", marginRight:"20px"}}
-
-      /><Card
-      href='./detail'
-      image='ride6.png'
-      header='Swan Lake'
-      meta='$1.00'
-      description='ride it'
-      style={{border:"5px outset #c70039"}}
-
-    />
+          href='./detail'
+          image={value.imageURL}
+          header={value.rideName}
+          meta={"$" + value.ticketPrice + ".00"}
+          description='ride it'
+          style={{ fontFamily:"Bangers",border:"5px outset #C70039"}}
+        />
+    ))}
+    </Card.Group>
+      
     <br></br>
     </div>
     </div>

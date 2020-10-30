@@ -6,15 +6,6 @@ import jumbotron from './rollercoaster2.png';
 import jumbotron2 from './stripes.jpg';
 import { callApi, makePost } from '../utils/api'
 export default function LandingPage() {
-  const [text, setText] = useState("");
-  useEffect(() => {
-    const demoCall = async () => {
-      const text = await callApi();
-      setText(text);
-      await makePost("special message");
-    };
-    demoCall();
-  }, []);
   const [index,setIndex] = useState(0);
   const [words, setWords] = useState(["Food","Rides","Entertainment"]);
   const [column, setColumn] = useState(["./cups.png", "./mill.png", "./bounce.png"]);
