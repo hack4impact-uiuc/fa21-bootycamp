@@ -1,4 +1,17 @@
 .outside {
-    margin-left: auto;
+    margin-left: 12em;
     margin-right: auto;
+    padding-top: 2%;
+    
+}
+
+.modal {
+    margin-left: 55em;
+    padding: 1%;
+
+}
+.submit {
+    margin-left: 56em;
+    padding: 1%;
+
 }

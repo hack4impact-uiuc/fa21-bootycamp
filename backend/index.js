@@ -30,12 +30,16 @@ app.use(bodyParser.json())
 app.get('/', async (req, res) => {
   const response = await Pusheens.find({})
 
-  res.send(response);
+  res.json(response);
 });
 
-app.post('/create', (req, res) => {
-  console.log('you made it!');
+app.post('/create', async (req, res) => {
+  //console.log('you made it!');
   console.log(req.body);
+
+  const newObj = new Pusheens(req.body);
+  await newObj.save()
+  res.json(newObj);
   
 })
 

@@ -2,8 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Header, Image, Modal } from 'semantic-ui-react'
 import "../styles/CreateObjectPage.css";
-
+import { makePusheen } from "../utils/api";
 export default function CreateObjectPage() {
+  const [name, setName] = useState("")
+  const [age, setAge] = useState("")
+  const [education, setEducation] = useState("")
+  const [profession, setProfession] = useState("")
+  const [hobbies, setHobbies] = useState("")
+  const [description, setDescription] = useState("")
+  const [image, setImage] = useState("")
+
   const [open, setOpen] = React.useState(false)
   return (
     <div>
@@ -15,51 +23,54 @@ export default function CreateObjectPage() {
   <div class="fields">
     <div class="field">
       <label>Name</label>
-      <input type="text" placeholder="Name"></input>
+      <input type="text" placeholder="Name" onChange = {e => setName(e.target.value)}></input>
     </div>
     <div class="field">
       <label>Age</label>
-      <input type="text" placeholder="Age"></input>
+      <input type="text" placeholder="Age" onChange = {e => setAge(e.target.value)}></input>
     </div>
     <div class="field">
       <label>Education</label>
-      <input type="text" placeholder="Education"></input>
+      <input type="text" placeholder="Education" onChange = {e => setEducation(e.target.value)}></input>
     </div>
     <div class="field">
       <label>Paw-fession</label>
-      <input type="text" placeholder="Profession"></input>
+      <input type="text" placeholder="Profession"  onChange = {e => setProfession(e.target.value)}></input>
     </div>
     <div class="field">
       <label>Hobbies</label>
-      <input type="text" placeholder="Hobbies"></input>
+      <input type="text" placeholder="Hobbies" onChange = {e => setHobbies(e.target.value)}></input>
     </div>
     <div class="field">
+    <label>Description</label>
+    <input type="text" placeholder="Description"  onChange = {e => setDescription(e.target.value)}></input>
+  </div>
+    <div class="field">
       <label>Image</label>
-      <input type="file" placeholder="Insert File"></input>
+      <input type="text" placeholder="Insert URL"  onChange = {e => setImage(e.target.value)}></input>
     </div>
   </div>
-  <div class="field">
-    <label>Description</label>
-    <textarea rows="2"></textarea>
-  </div>
+ 
 </div>
 </div>
 
 <div>
-<button class="ui button" type="submit">Submit</button>
+<div class = "submit">
+<button class="ui button" type="submit" onClick = {event => makePusheen(name,age,education,profession, hobbies,description, image)}>Submit</button>
+</div>
 <Modal
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button>Show Modal</Button>}
+      trigger={<div class = "modal"><Button>Show Modal</Button></div>}
     >
       <Modal.Header>Select a Photo</Modal.Header>
       <Modal.Content image>
-        <Image size='medium' src='https://pa1.narvii.com/6352/7f28a2e6918bcd6a9c7c3d580ae5b18965786e9f_00.gif' wrapped />
+        <Image size='medium' src={image} wrapped />
         <Modal.Description>
-          <Header>Taylor Hissed</Header>
+          <Header>{name}</Header>
           <p>
-           Description: Taylor Alison Hissed is an American singer-songwriter. Her narrative songwriting, which often centers around her paws-onal life, has received widespread critical plaudits and media coverage. (from Wikipedia)
+          {description}
            
           </p>
           <p></p>
