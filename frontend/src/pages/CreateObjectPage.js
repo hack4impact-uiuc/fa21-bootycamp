@@ -79,12 +79,12 @@ export default function CreateObjectPage() {
   </div>
   </div>
   <div style={{display:"flex", position: "relative", flexDirection: "column", bottom:"590px", left:"900px"}}>
-      <img id="gear1" src ="./gear1.png" style={{width:"80px", height:"80px", position:"relative", left:"0px"}}/>
-      <img id="gear3" src ="./gear3.png" style={{width:"80px", height:"80px", position:"relative", left:"30px"}}/>
-      <img id="gear2" src ="./gear2.png" style={{width:"80px", height:"80px", position:"relative", left:"0px"}}/>
-      <img id="gear1" src ="./gear1.png" style={{width:"80px", height:"80px", position:"relative", left:"-500px"}}/>
-      <img id="gear3" src ="./gear3.png" style={{width:"80px", height:"80px", position:"relative", left:"-530px"}}/>
-      <img id="gear2" src ="./gear2.png" style={{width:"80px", height:"80px", position:"relative", left:"-500px"}}/>
+      <img id="gear1" src ="./gear1.png" style={{width:"80px", height:"80px", position:"relative", left:"-60px"}}/>
+      <img id="gear3" src ="./gear3.png" style={{width:"80px", height:"80px", position:"relative", left:"-30px"}}/>
+      <img id="gear2" src ="./gear2.png" style={{width:"80px", height:"80px", position:"relative", left:"-60px"}}/>
+      <img id="gear1" src ="./gear1.png" style={{width:"80px", height:"80px", position:"relative", left:"-510px"}}/>
+      <img id="gear3" src ="./gear3.png" style={{width:"80px", height:"80px", position:"relative", left:"-540px"}}/>
+      <img id="gear2" src ="./gear2.png" style={{width:"80px", height:"80px", position:"relative", left:"-510px"}}/>
   </div>
   </div>
   );
