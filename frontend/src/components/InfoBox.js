@@ -15,5 +15,3 @@ const InfoBox = ({ backColor, heading, paragraphDescription, children, leftChang
 );
 
 export { InfoBox };
-
-//TODO: right notes or hints on here, ask what props can be what
