@@ -17,7 +17,7 @@ export default function LandingPage() {
         <p> I like to meme!</p>
 
       </div>
-      <div style={{ backgroundColor: "#64BEFD", width: "50%", height: "200px", position: "absolute", marginLeft: "600px", color: "white", textAlign: "center" }}>
+      <div style={{ backgroundColor: "#64BEFD", width: "50%", height: "200px", marginLeft: "600px", color: "white", textAlign: "center" }}>
         <h1> Iconic Memes and Vines </h1>
         <p> Meme! Meme! Meme!</p>
       </div>
