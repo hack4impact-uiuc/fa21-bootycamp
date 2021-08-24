@@ -2,7 +2,7 @@
 
 ## About
 
-I am a *Insert role here* at Hack4Impact!
+I am a ***Insert role here*** at Hack4Impact!
 
 ## My Profile
 
@@ -15,9 +15,9 @@ I am a *Insert role here* at Hack4Impact!
           width="500px"
         />
         <br />
-        <b>*INSERT NAME*</b>
+        <b><i>INSERT NAME</i></b>
         <br />
-        <sub>INSERT ROLE</sub>
+        <sub><b><i>INSERT ROLE</i></b></sub>
       </a>
     </td>
     </tr>
@@ -25,7 +25,7 @@ I am a *Insert role here* at Hack4Impact!
 
 ## Usage
 
-The latest version of this application can be found at my branch named *INSERT NAME*.
+The latest version of this application can be found at my branch named ***INSERT NAME***.
 
 To setup and run locally:
 
