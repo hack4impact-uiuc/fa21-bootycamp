@@ -1,26 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { InfoBox } from "../components/InfoBox";
 
 import "../styles/LandingPage.css";
 
 export default function LandingPage() {
   return (
     <div>
-      {/* This is the homepage of your app. You should have a jumbotron, a button 
-      leading to GalleryPage and another button leading to CreateObjectPage. */}
-      <div style={{ backgroundColor: "#64BEFD", width: "50%", height: "200px", marginLeft: "0px", color: "white", textAlign: "center" }}>
-        <h1> About This Website </h1>
-        <p> What a cool website this is!! I can show you all the memes I love!</p>
-      </div>
-      <div style={{ backgroundColor: "#00008B", width: "50%", height: "200px", marginLeft: "300px", color: "white", textAlign: "center" }}>
-        <h1> About The Creator </h1>
-        <p> I like to meme!</p>
+      <InfoBox backColor="#64BEFD" heading="About This " paragraphDescription="What a cool website this is!! I can show you all the memes I love!" ></InfoBox>
+      <InfoBox backColor="#00008B" heading="About The Creator " paragraphDescription="I like to meme!" leftChange="300px"></InfoBox>
+      <InfoBox backColor="#64BEFD" heading="Iconic Memes and Vines" paragraphDescription="Meme! Meme! Meme!" leftChange="600px"></InfoBox>
 
-      </div>
-      <div style={{ backgroundColor: "#64BEFD", width: "50%", height: "200px", position: "absolute", marginLeft: "600px", color: "white", textAlign: "center" }}>
-        <h1> Iconic Memes and Vines </h1>
-        <p> Meme! Meme! Meme!</p>
-      </div>
+
     </div>
   );
 }
