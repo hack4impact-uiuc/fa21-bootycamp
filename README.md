@@ -2,7 +2,7 @@
 
 ## About
 
-I am a ***Insert role here*** at Hack4Impact!
+I am a ***INSERT ROLE HERE*** at Hack4Impact!
 
 ## My Profile
 
