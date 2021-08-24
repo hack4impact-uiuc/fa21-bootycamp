@@ -15,9 +15,9 @@ I am a *Insert role here* at Hack4Impact!
           width="500px"
         />
         <br />
-        <b>NAME</b>
+        <b>*INSERT NAME*</b>
         <br />
-        <sub>ROLE</sub>
+        <sub>INSERT ROLE</sub>
       </a>
     </td>
     </tr>
