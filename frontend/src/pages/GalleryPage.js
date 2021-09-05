@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import data from "../data/mockData";
 import { Card } from 'semantic-ui-react'
 
 import "../styles/GalleryPage.css";

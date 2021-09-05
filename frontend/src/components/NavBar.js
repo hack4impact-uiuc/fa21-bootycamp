@@ -9,7 +9,6 @@ export default function NavBar(props) {
       <Menu>
         <Menu.Item><Link to="/">Home</Link></Menu.Item>
         <Menu.Item><Link to="/gallery">Gallery</Link></Menu.Item>
-        <Menu.Item><Link to="/create">Create</Link></Menu.Item>
       </Menu>
     </div>
   );
