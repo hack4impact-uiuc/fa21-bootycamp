@@ -13,9 +13,9 @@ I am a **_INSERT ROLE HERE_** at Hack4Impact!
           width="500px"
         />
         <br />
-        <b><i>INSERT NAME</i></b>
+        <b><i> Patrick Star </i></b>
         <br />
-        <sub><b><i>INSERT ROLE</i></b></sub>
+        <sub><b><i> Software Developer</i></b></sub>
       </a>
     </td>
     </tr>
