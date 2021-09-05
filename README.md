@@ -1,8 +1,6 @@
-
-
 ## About
 
-I am a ***INSERT ROLE HERE*** at Hack4Impact!
+I am a **_INSERT ROLE HERE_** at Hack4Impact!
 
 ## My Profile
 
@@ -11,7 +9,7 @@ I am a ***INSERT ROLE HERE*** at Hack4Impact!
     <td align="center">
       <a href="tacobell.com">
         <img
-          src="https://uiuc.hack4impact.org/images/people/vasu_chalasani.jpg"
+          src="https://data.whicdn.com/images/317675372/original.jpg"
           width="500px"
         />
         <br />
@@ -25,7 +23,7 @@ I am a ***INSERT ROLE HERE*** at Hack4Impact!
 
 ## Usage
 
-The latest version of this application can be found at my branch named ***INSERT NAME***.
+The latest version of this application can be found at my branch named **_INSERT NAME_**.
 
 To setup and run locally:
 
@@ -34,6 +32,6 @@ To setup and run locally:
 
 ## Technologies
 
-This application is built with React. 
+This application is built with React.
 
 <hr />
