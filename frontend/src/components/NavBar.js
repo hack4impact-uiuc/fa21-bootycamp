@@ -9,7 +9,6 @@ export default function NavBar(props) {
       <Menu style={{ backgroundColor: "black", color: "white" }}>
         <Menu.Item style={{ color: "white", fontSize: "20px", textShadow: "2px 2px black" }}><Link to="/">Home</Link></Menu.Item>
         <Menu.Item style={{ color: "white", fontSize: "20px", textShadow: "2px 2px black" }}><Link to="/gallery">Gallery</Link></Menu.Item>
-        <Menu.Item style={{ color: "white", fontSize: "20px", textShadow: "2px 2px black" }}><Link to="/create">Create</Link></Menu.Item>
       </Menu>
     </div>
   );

@@ -6,8 +6,6 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import GalleryPage from "./pages/GalleryPage";
-import CreateObjectPage from "./pages/CreateObjectPage";
-import DetailPage from "./pages/DetailPage";
 
 import NavBar from "./components/NavBar";
 
@@ -21,16 +19,6 @@ ReactDOM.render(
           exact
           path="/gallery"
           render={(props) => <GalleryPage {...props} />}
-        />
-        <Route
-          exact
-          path="/create"
-          render={(props) => <CreateObjectPage {...props} />}
-        />
-        <Route
-          exact
-          path="/detail"
-          render={(props) => <DetailPage {...props} />}
         />
       </Switch>
     </Router>
