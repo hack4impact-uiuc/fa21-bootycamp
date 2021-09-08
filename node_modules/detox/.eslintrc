@@ -1,0 +1,15 @@
+{
+  "plugins": ["node"],
+  "extends": ["plugin:node/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "no-mixed-spaces-and-tabs": "error",
+    "node/no-unpublished-require": "warn"
+  }
+}
