@@ -27,8 +27,7 @@ const styles = {
     flexDirection: "row",
   },
   likesCounter: {
-    marginRight: "10px",
-    lineHeight: "20px",
+    margin: "auto 10px auto auto",
   },
 };
 
