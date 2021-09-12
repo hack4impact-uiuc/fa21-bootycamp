@@ -9,7 +9,11 @@ const LikesButton = () => {
     <Button onClick={() => setLikes(likes + 1)} style={styles.buttonStyle}>
       <div style={styles.buttonContainer}>
         <div style={styles.likesCounter}>{likes}</div>
-        <AiFillHeart size={20} color="#64BEFD" />
+        {likes % 2 ? (
+          <AiFillHeart size={20} color="#FF0000" />
+        ) : (
+          <AiFillHeart size={20} color="#64BEFD" />
+        )}
       </div>
     </Button>
   );
