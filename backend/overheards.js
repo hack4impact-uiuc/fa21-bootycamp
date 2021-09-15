@@ -25,3 +25,5 @@ const overheards = [
   {name: "Nayonika", quote: "I’m excited for drug development and chemistry", image: "https://uiuc.hack4impact.org/images/people/nayonika_roy.jpg"} ,
   {name: "Leo", quote: "elephants never forget", image: "https://uiuc.hack4impact.org/images/people/leonardo_galindo.jpg"}
 ];
+
+module.exports = overheards
